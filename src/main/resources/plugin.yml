@@ -1,0 +1,15 @@
+name: oPlayerTime
+version: '${version}'
+main: flyproject.oplayertime.oPlayerTime
+api-version: 1.13
+authors: [ FlyProject, oP1n ]
+description: A Share premium plugin
+commands:
+  oplayertime:
+    permission: oplayertime.admin
+    aliases:
+      - opt
+permissions:
+  oplayertime.admin:
+    default: op
+    description: oPlayerTime Admin Permission
