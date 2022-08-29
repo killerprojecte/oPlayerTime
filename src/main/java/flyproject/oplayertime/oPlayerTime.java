@@ -37,7 +37,7 @@ public final class oPlayerTime extends JavaPlugin {
             for (Player player : Bukkit.getOnlinePlayers()){
                 if (!oDatabase.has(player)){
                     List<Long> map = new ArrayList<>();
-                    for (String key : oPlayerTime.getInstance().getConfig().getConfigurationSection("premissions").getKeys(false)){
+                    for (String key : oPlayerTime.getInstance().getConfig().getConfigurationSection("permissions").getKeys(false)){
                         if (player.hasPermission("oplayertime." + key)){
                             map.add(oPlayerTime.getInstance().getConfig().getLong("permissions." + key));
                         }
