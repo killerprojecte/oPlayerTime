@@ -24,7 +24,7 @@ public class oListener implements Listener {
                     "&e&l数据将在0:00分自动更新 或联系服务器管理员清空"));
         }
         List<Long> map = new ArrayList<>();
-        for (String key : oPlayerTime.getInstance().getConfig().getConfigurationSection("premissions").getKeys(false)){
+        for (String key : oPlayerTime.getInstance().getConfig().getConfigurationSection("permissions").getKeys(false)){
             if (event.getPlayer().hasPermission("oplayertime." + key)){
                 map.add(oPlayerTime.getInstance().getConfig().getLong("permissions." + key));
             }
